@@ -1,0 +1,458 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Loja Online</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- Menu de Navegação -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="header-1">
+                    <div class="logo">
+                        <img class="imagem__logo" src="./img/logo_sem_fundo.png">
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Página Inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="masculino.html">Masculino</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="feminino.html">Feminino</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="acessorios.html">Acessórios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0 ml-lg-3">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn custom-button" type="submit">Buscar</button>
+                    </form>
+                </div>
+        </nav>
+    </header>
+
+    <!-- Seção de informações -->
+    <section class="info-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Frete Grátis</h4>
+                    <p>Para compras acima de R$ 100,00</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Formas de Pagamento</h4>
+                    <p>Cartão de Crédito, Boleto, Pix</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Cupons Exclusivos</h4>
+                    <p>Descontos especiais para clientes</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Loja Segura</h4>
+                    <p>Compra 100% protegida</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grade de produtos -->
+    <section class="container mt-5">
+        <div class="row">
+            <section class="product-grid container">
+                <h2 class="text-center">Acessórios</h2>
+                <section class="container mt-5">
+                    <div class="row">
+                        <!-- Produto 1 -->
+                        <div class="col-md-4 product-card">
+                            <div class="card">
+                                <img src="img/bone2.jpg" class="card-img-top" alt="Produto 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Produto 1</h5>
+                                    <p class="card-text">R$ 100,00</p>
+                                    <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#productModal1">Ver Produto</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Produto 2 -->
+                        <div class="col-md-4 product-card">
+                            <div class="card">
+                                <img src="img/bone3.jpg" class="card-img-top" alt="Produto 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Produto 2</h5>
+                                    <p class="card-text">R$ 150,00</p>
+                                    <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#productModal2">Ver Produto</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Produto 3 -->
+                        <div class="col-md-4 product-card">
+                            <div class="card">
+                                <img src="img/bone4.jpg" class="card-img-top" alt="Produto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Produto 3</h5>
+                                    <p class="card-text">R$ 200,00</p>
+                                    <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#productModal3">Ver Produto</button>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Produto 4 -->
+                        <div class="col-md-4 product-card">
+                            <div class="card">
+                                <img src="img/mochila1.jpg" class="card-img-top" alt="Produto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Produto 3</h5>
+                                    <p class="card-text">R$ 200,00</p>
+                                    <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#productModal3">Ver Produto</button>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Produto 5 -->
+                        <div class="col-md-4 product-card">
+                            <div class="card">
+                                <img src="img/mochila2.jpg" class="card-img-top" alt="Produto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Produto 3</h5>
+                                    <p class="card-text">R$ 200,00</p>
+                                    <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#productModal3">Ver Produto</button>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Produto 6-->
+                        <div class="col-md-4 product-card">
+                            <div class="card">
+                                <img src="img/mochila3.jpg" class="card-img-top" alt="Produto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Produto 3</h5>
+                                    <p class="card-text">R$ 200,00</p>
+                                    <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#productModal3">Ver Produto</button>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Produto 7 -->
+                        <div class="col-md-4 product-card">
+                            <div class="card">
+                                <img src="img/mochila4.jpg" class="card-img-top" alt="Produto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Produto 3</h5>
+                                    <p class="card-text">R$ 200,00</p>
+                                    <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#productModal3">Ver Produto</button>
+                                </div>
+                            </div>
+                        </div> 
+                        <!-- Produto 8 -->
+                        <div class="col-md-4 product-card">
+                            <div class="card">
+                                <img src="img/oculos1.jpg" class="card-img-top" alt="Produto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Produto 3</h5>
+                                    <p class="card-text">R$ 200,00</p>
+                                    <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#productModal3">Ver Produto</button>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Produto 9 -->
+                        <div class="col-md-4 product-card">
+                            <div class="card">
+                                <img src="img/oculos2.jpg" class="card-img-top" alt="Produto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Produto 3</h5>
+                                    <p class="card-text">R$ 200,00</p>
+                                    <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#productModal3">Ver Produto</button>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Produto 10 -->
+                        <div class="col-md-4 product-card">
+                            <div class="card">
+                                <img src="img/oculos3.jpg" class="card-img-top" alt="Produto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Produto 3</h5>
+                                    <p class="card-text">R$ 200,00</p>
+                                    <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#productModal3">Ver Produto</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 product-card">
+                            <div class="card">
+                                <img src="img/tenis1.jpg" class="card-img-top" alt="Produto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Produto 3</h5>
+                                    <p class="card-text">R$ 200,00</p>
+                                    <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#productModal3">Ver Produto</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 product-card">
+                            <div class="card">
+                                <img src="img/tenis2.jpg" class="card-img-top" alt="Produto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Produto 3</h5>
+                                    <p class="card-text">R$ 200,00</p>
+                                    <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#productModal3">Ver Produto</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 product-card">
+                            <div class="card">
+                                <img src="img/tenis3.jpg" class="card-img-top" alt="Produto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Produto 3</h5>
+                                    <p class="card-text">R$ 200,00</p>
+                                    <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#productModal3">Ver Produto</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                         <!-- Modal Produto 1 -->
+                    <div class="modal fade" id="productModal1" tabindex="-1" role="dialog" aria-labelledby="productModalLabel1" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="productModalLabel1">Produto 1</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/masculino1.jpg" class="img-fluid" alt="Produto 1">
+                                        <p>Descrição detalhada do Produto 1.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                        <!-- Modal Produto 2 -->
+                    <div class="modal fade" id="productModal2" tabindex="-1" role="dialog" aria-labelledby="productModalLabel2" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="productModalLabel2">Produto 2</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/masculino2.jpg" class="img-fluid" alt="Produto 2">
+                                        <p>Descrição detalhada do Produto 2.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                        <!-- Modal Produto 3 -->
+                    <div class="modal fade" id="productModal3" tabindex="-1" role="dialog" aria-labelledby="productModalLabel3" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="productModalLabel3">Produto 3</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/masculino3.jpg" class="img-fluid" alt="Produto 3">
+                                        <p>Descrição detalhada do Produto 3.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="modal fade" id="productModal3" tabindex="-1" role="dialog" aria-labelledby="productModalLabel3" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="productModalLabel3">Produto 3</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/masculino4.jpg" class="img-fluid" alt="Produto 3">
+                                        <p>Descrição detalhada do Produto 3.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="modal fade" id="productModal3" tabindex="-1" role="dialog" aria-labelledby="productModalLabel3" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="productModalLabel3">Produto 3</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/masculino5.jpg" class="img-fluid" alt="Produto 3">
+                                        <p>Descrição detalhada do Produto 3.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="modal fade" id="productModal3" tabindex="-1" role="dialog" aria-labelledby="productModalLabel3" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="productModalLabel3">Produto 3</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/masculino6.jpg" class="img-fluid" alt="Produto 3">
+                                        <p>Descrição detalhada do Produto 3.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="modal fade" id="productModal3" tabindex="-1" role="dialog" aria-labelledby="productModalLabel3" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="productModalLabel3">Produto 3</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/masculino7.jpg" class="img-fluid" alt="Produto 3">
+                                        <p>Descrição detalhada do Produto 3.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="modal fade" id="productModal3" tabindex="-1" role="dialog" aria-labelledby="productModalLabel3" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="productModalLabel3">Produto 3</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/masculino8.jpg" class="img-fluid" alt="Produto 3">
+                                        <p>Descrição detalhada do Produto 3.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="modal fade" id="productModal3" tabindex="-1" role="dialog" aria-labelledby="productModalLabel3" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="productModalLabel3">Produto 3</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/masculino9.jpg" class="img-fluid" alt="Produto 3">
+                                        <p>Descrição detalhada do Produto 3.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="modal fade" id="productModal3" tabindex="-1" role="dialog" aria-labelledby="productModalLabel3" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="productModalLabel3">Produto 3</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/masculino10.jpg" class="img-fluid" alt="Produto 3">
+                                        <p>Descrição detalhada do Produto 3.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+        
+
+     <!-- Rodapé -->
+     <footer class="rodape">
+        <section class="rodape__aluraGeek">
+            <div class="rodape__divLogo">
+                <img class="rodape__logo" src="./img/logo_sem_fundo.png" alt="Logo Techturbo">
+            </div>
+            <nav class="rodape__informacoes">
+                <a class="rodape__informacao" href="#">Quem somos</a>
+                <a class="rodape__informacao" href="#">Política de privacidade</a>
+                <a class="rodape__informacao" href="#">Programa fidelidade</a>
+                <a class="rodape__informacao" href="#">Nossas lojas</a>
+                <a class="rodape__informacao" href="#">Quero ser franqueado</a>
+                <a class="rodape__informacao" href="#">Anuncie aqui</a>
+            </nav>
+            <form class="rodape__faleConosco">
+                <p class="rodape__subtitulo">Fale conosco</p>
+                <div class="rodape__formulario">
+                    <label class="rodape__nome" for="text">Nome</label>
+                    <input class="rodape__inputNome" type="text" placeholder="Seu Nome" required>
+                </div>
+                <textarea class="rodape__mensagem" name="mensagem" id="" cols="30" rows="5" minlength="3"
+                    required>Escreva sua mensagem</textarea>
+                <button class="rodape__btn Botao2">Enviar mensagem</button>
+            </form>
+        </section>
+        <section class="rodape__desenvolvedor">
+            <p>© 2022 - by Emily Yasmin</p>
+        </section>
+    </footer>
+    
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

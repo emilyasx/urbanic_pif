@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localizações das Lojas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="header-1">
+                <div class="logo">
+                    <img class="imagem__logo" src="./img/logo_sem_fundo.png">
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="masculino.html">Masculino</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feminino.html">Feminino</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acessorios.html">Acessórios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 ml-lg-3">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn custom-button" type="submit">Buscar</button>
+                </form>
+            </div>
+    </nav>
+</header>
+    <div class="container content">
+        <h1 class="my-4">Nossas Localizações</h1>
+        <div class="map-container" id="map">
+            <h1>Loja 1</h1>
+            <p>SMAS Trecho 1 - Guará, Brasília - DF, 71219-900</p>
+            <div class="mapBox">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15353.733019354231!2d-47.9548795!3d-15.8338103!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3029eaad68b7%3A0xc4985755bc8593cc!2sParkShopping!5e0!3m2!1spt-BR!2sbr!4v1717992570130!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           </div>
+        </div>
+        <div class="map-container" id="map">
+            <h1>Loja 2</h1>
+            <p>Av. das Araucárias, 1835/2005 - Águas Claras, Brasília - DF, 71936-250</p>
+            <div class="mapBox">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15353.502638272797!2d-48.040740864383!3d-15.83684136358733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a327288966c0f%3A0x46df71f6b8e06cf1!2s%C3%81guas%20Claras%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1717992776532!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+<!-- Rodapé -->
+<footer class="rodape">
+    <section class="rodape__aluraGeek">
+        <div class="rodape__divLogo">
+            <img class="rodape__logo" src="./img/logo_sem_fundo.png" alt="Logo Techturbo">
+        </div>
+        <nav class="rodape__informacoes">
+            <a class="rodape__informacao" href="#">Quem somos</a>
+            <a class="rodape__informacao" href="#">Política de privacidade</a>
+            <a class="rodape__informacao" href="#">Programa fidelidade</a>
+            <a class="rodape__informacao" href="#">Nossas lojas</a>
+            <a class="rodape__informacao" href="#">Quero ser franqueado</a>
+            <a class="rodape__informacao" href="#">Anuncie aqui</a>
+        </nav>
+        <form class="rodape__faleConosco">
+            <p class="rodape__subtitulo">Fale conosco</p>
+            <div class="rodape__formulario">
+                <label class="rodape__nome" for="text">Nome</label>
+                <input class="rodape__inputNome" type="text" placeholder="Seu Nome" required>
+            </div>
+            <textarea class="rodape__mensagem" name="mensagem" id="" cols="30" rows="5" minlength="3"
+                required>Escreva sua mensagem</textarea>
+            <button class="rodape__btn Botao2">Enviar mensagem</button>
+        </form>
+    </section>
+    <section class="rodape__desenvolvedor">
+        <p>© 2022 - by Emily Yasmin</p>
+    </section>
+</footer>
+
+
+<!-- Scripts do Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
