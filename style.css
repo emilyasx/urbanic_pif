@@ -29,7 +29,7 @@ header {
     width: 100%;
 }
 .header-1 {
-    width: 30%;
+    width: 20%;
 }
 
 
@@ -51,7 +51,9 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
+.bi-instagram {
+    color:#ffd3dd ;
+}
 
 .navbar {
     background-color: #fff;
@@ -98,15 +100,14 @@ body {
     background-color: #e6b3c1; /* Cor de fundo ao passar o mouse */
     color: #fff; /* Cor do texto ao passar o mouse */
 }
-
-.carousel {
-    margin: 0;
+.carousel-item img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
-.carousel-item img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
+.carousel {
+    max-width: 100%; /* Garante que o carrossel não ultrapasse o tamanho do contêiner pai */
+    overflow: hidden; /* Esconde as partes do carrossel que ultrapassam o contêiner */
 }
 
 .product-grid {
@@ -345,4 +346,146 @@ body {
     transition: 0.5s;
     background-color: ff;
     transform: scale(1.1);
+}
+.social-icons {
+    display: flex;
+    gap: 17px;
+    justify-content: center;
+    padding: 25px 0;
+}
+.social-icons a {
+    text-decoration: none;
+    color: #f9c1d3; /* Ajuste a cor conforme necessário */
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #fa87ac; /* Ajuste a cor conforme necessário */
+}
+
+/* Para telas menores que 768px */
+@media (max-width: 768px) {
+    .header-1 {
+        width: 100%;
+    }
+    .logo {
+        width: 20%;
+    }
+    .contact-form {
+        width: 70%;
+    }
+    .rodape__informacoes {
+        width: 176px;
+        height: 34px;
+    }
+    
+    .rodape__informacao {
+        margin: 14px 0;
+    }
+    
+    .rodape__formulario {
+        width:100%;
+        margin: 20px auto;
+    }
+}
+
+/* Para telas menores que 576px */
+@media (max-width: 576px) {
+    .contact-form {
+        width: 100%;
+    }
+}
+.rodape__aluraGeek {
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.rodape__divLogo, .rodape__informacoes, .rodape__faleConosco {
+    flex: 1;
+    margin: 10px;
+    text-align: left;
+}
+
+.rodape__logo {
+    width: 90px;
+    height: 110px;
+}
+
+
+/* Para telas menores que 400px */
+@media (max-width: 400px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodape__logo {
+        width: 110px;
+        height: 150px;
+        position: static;
+    }
+    .rodape__divLogo, .rodape__informacoes, .rodape__faleConosco {
+        flex: 1;
+        margin: 7px;
+        font-size: 10px;
+    }
+    .rodape__formulario {
+        width:100%;
+        margin: 15px auto;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 30%; /* Redimensiona a logo */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff; /* Adiciona um fundo ao menu para torná-lo mais visível */
+        padding: 10px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .navbar-nav.show {
+        max-height: 1000px; /* Ajuste o máximo de altura conforme necessário */
+    }
+
+    .navbar-nav .nav-link {
+        color: #000 !important;
+        text-align: center;
+    }
+
+    .rodape__divLogo, .rodape__informacoes, .rodape__faleConosco {
+        flex: 1;
+        margin: 7px;
+        font-size: 10px;
+    }
+
+
+}
+@media (min-width: 992px) {
+    .rodape__aluraGeek {
+        flex-direction: row;
+    }
+
+    .rodape__divLogo, .rodape__informacoes, .rodape__faleConosco {
+        flex: 1;
+        margin: 7px;
+        font-size: 10px;
+    }
+
+    .rodape__formulario {
+        width: 100%;
+    }
+    
 }

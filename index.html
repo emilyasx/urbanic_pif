@@ -7,23 +7,42 @@
     <title>Urbanic</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Menu de Navegação -->
-     <header>
+    <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="header-1">
                 <div class="logo">
                     <img class="imagem__logo" src="./img/logo_sem_fundo.png">
                 </div>
             </div>
+            <ul class="social-icons">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://facebook.com" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://tiktok.com" target="_blank">
+                    <i class="fab fa-tiktok"></i>
+                  </a>
+                </li>
+              </ul>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto">  
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html">Página Inicial</a>
                     </li>
@@ -49,7 +68,7 @@
                 </form>
             </div>
     </nav>
-</header>
+    </header>
 
     <!-- Carrossel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -301,16 +320,21 @@
                     <label class="rodape__nome" for="text">Nome</label>
                     <input class="rodape__inputNome" type="text" placeholder="Seu Nome" required>
                 </div>
-                <textarea class="rodape__mensagem" name="mensagem" id="" cols="30" rows="5" minlength="3"
-                    required>Escreva sua mensagem</textarea>
+                <textarea class="rodape__mensagem" name="mensagem" id="" cols="30" rows="5" minlength="3" required>Escreva sua mensagem</textarea>
                 <button class="rodape__btn Botao2">Enviar mensagem</button>
             </form>
         </section>
         <section class="rodape__desenvolvedor">
             <p>© 2022 - by Emily Yasmin</p>
+            <!-- Adicione os ícones das redes sociais aqui -->
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
         </section>
     </footer>
-    
 
     <!-- Bootstrap JS e dependências -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
